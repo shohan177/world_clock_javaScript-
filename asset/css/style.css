@@ -1,0 +1,127 @@
+.body {
+  background-image: url("../image/1280px-World_map_blank_shorelines_semiwikimapia.svg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main_body {
+  margin: 10px auto 0px;
+  width: 60%;
+}
+
+.add_clock {
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 60px 90px 0px;
+}
+.search_result {
+  position: relative;
+  z-index: 9999;
+  max-height: 300px;
+  min-height: 100px;
+  background-color: #fff;
+}
+#result_loading img {
+  height: 70px;
+  width: 70px;
+  margin: 10px auto 0px;
+}
+.render_clock {
+  margin-top: 5px;
+  border-radius: 10px;
+  min-height: 700px;
+  background-color: rgb(255, 255, 255);
+  /* opacity: 0.9; */
+}
+.clock {
+  margin: 15px auto 0px;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  /* background-image: url("../image/night.png"); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 180px 180px;
+  border-radius: 50%;
+  border: 10px solid #a0b9d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock p {
+  margin-top: 110px;
+  font-family: sans-serif;
+  color: #22282e;
+  font-size: 10px;
+  text-align: center;
+  position: absolute;
+  z-index: 99;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid orange;
+  padding: 0px 3px 0px;
+}
+.clock-close {
+  position: absolute;
+  z-index: 99;
+  margin: -190px 0px 0px 150px;
+}
+.clock::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 99;
+}
+.second {
+  width: 0px;
+  height: 140px;
+  background-color: palegreen;
+  display: flex;
+  justify-content: center;
+}
+
+.second::before {
+  content: "";
+  width: 3px;
+  height: 90px;
+  background-color: orange;
+  position: absolute;
+}
+
+.minute {
+  width: 0px;
+  height: 125px;
+  background-color: palegreen;
+  display: flex;
+  justify-content: center;
+  /* transform: rotate(90deg); */
+}
+
+.minute::before {
+  content: "";
+  width: 5px;
+  height: 85px;
+  background-color: rgb(245, 60, 69);
+  border-radius: 10px;
+  position: absolute;
+}
+.hours {
+  width: 0px;
+  height: 95px;
+  background-color: palegreen;
+  display: flex;
+  justify-content: center;
+  /* transform: rotate(45deg); */
+}
+
+.hours::before {
+  content: "";
+  width: 6px;
+  height: 70px;
+  background-color: rgb(105, 0, 241);
+  border-radius: 10px;
+  position: absolute;
+}

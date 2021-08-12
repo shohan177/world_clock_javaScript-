@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Clock by shohan</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+</head>
+<body class="body">
+    <br>
+    <div class="main_body">
+
+        <div class="add_clock">
+            <div class="input-group mb-3">
+                <input type="text" id="search_time_zone" class="form-control" placeholder="Select Time Zone (Country Capital)">
+                <div class="input-group-append">
+                  <button class="btn btn-info text-white" type="button">Add Clock</button>
+                </div>
+            </div>
+            <div id="result_loading" class="search_result shadow">
+                <div class="list-group ">
+                    <img src="asset/image/loding2.gif" alt="">
+                   
+                </div>
+            </div>
+            <div id="result_show" class="search_result overflow-auto shadow">
+                <div class="list-group" id="resut_list">
+                    
+                   
+                </div>
+            </div>
+
+        </div>
+        <div class="render_clock">
+            <div class="container pt-2">
+
+                <div class="row" id="show_anlog_clock">
+                    
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+<script src="asset/js/script.js"></script>
+<script src="asset/js/bootstrap.bundle.min.js"></script>
+

@@ -24,7 +24,7 @@ input.onkeyup = () => {
     let inputval = input.value;
     //loading div
     pageLoad()
-    console.log(inputval);
+    //console.log(inputval);
     serachZone(inputval);
 }
 

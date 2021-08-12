@@ -68,7 +68,7 @@ function serachZone(inputdata) {
 async function getAllTimeZone() {
     
     //time zone api
-    let allTimeZone = await fetch('http://worldtimeapi.org/api/timezone/');
+    let allTimeZone = await fetch('https://worldtimeapi.org/api/timezone/');
     let data = await allTimeZone.json();
     //store api data in session storage
     sessionStorage.setItem('all_zone',JSON.stringify(data))
@@ -81,7 +81,7 @@ async function getAllTimeZone() {
 function selectZone(valu) {
     
     result_show.style.display = 'none';
-    console.log(valu);
+    //console.log(valu);
     let zone_arry = local_Storage();
     zone_arry.push(valu);
     //selected zone data store 
@@ -183,7 +183,7 @@ function clockShow() {
         }
        
        
-        console.log(click_div);
+        //console.log(click_div);
         
     })
 
